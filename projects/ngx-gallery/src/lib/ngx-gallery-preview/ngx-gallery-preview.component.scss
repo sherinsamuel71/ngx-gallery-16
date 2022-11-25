@@ -12,11 +12,11 @@
 :host {
     display: none;
 
-    >>> .ngx-gallery-arrow {
+    ::ng-deep .ngx-gallery-arrow {
         font-size: 50px;
     }
 
-    >>> ngx-gallery-bullets {
+    ::ng-deep ngx-gallery-bullets {
         height: 5%;
         align-items: center;
         padding: 0px;
@@ -50,13 +50,13 @@
     display: inline-block;
 }
 
-:host >>> .ngx-gallery-preview-top {
+:host ::ng-deep .ngx-gallery-preview-top {
     position: absolute;
     width: 100%;
     user-select: none;
 }
 
-:host >>> .ngx-gallery-preview-icons {
+:host ::ng-deep .ngx-gallery-preview-icons {
     float: right;
 
     .ngx-gallery-icon {

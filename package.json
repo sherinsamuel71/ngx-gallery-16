@@ -1,13 +1,13 @@
 {
-  "name": "ngx-gallery-9",
-  "version": "1.0.6",
+  "name": "ngx-gallery-15",
+  "version": "15.0.1",
   "license": "MIT",
   "repository": {
-    "url": "https://github.com/SaeedSpate/ngx-gallery-9"
+    "url": "https://github.com/helios57/ngx-gallery-15"
   },
   "bugs": {
-    "email": "yazdani.zs@gmail.com",
-    "url": "https://github.com/SaeedSpate/ngx-gallery-9/issues"
+    "email": "helios157@gmail.com",
+    "url": "https://github.com/helios57/ngx-gallery-15/issues"
   },
   "scripts": {
     "ng": "ng",
@@ -19,39 +19,28 @@
   },
   "private": false,
   "dependencies": {
-    "@angular/animations": "~9.0.1",
-    "@angular/common": "~9.0.1",
-    "@angular/compiler": "~9.0.1",
-    "@angular/core": "~9.0.1",
-    "@angular/forms": "~9.0.1",
-    "@angular/platform-browser": "~9.0.1",
-    "@angular/platform-browser-dynamic": "~9.0.1",
-    "@angular/router": "~9.0.1",
-    "rxjs": "~6.5.4",
-    "tslib": "^1.10.0",
-    "zone.js": "~0.10.2"
+    "@angular/animations": "~15.0.0",
+    "@angular/common": "~15.0.0",
+    "@angular/compiler": "^15.0.0",
+    "@angular/core": "~15.0.0",
+    "@angular/forms": "~15.0.0",
+    "@angular/platform-browser": "~15.0.0",
+    "@angular/platform-browser-dynamic": "~15.0.0",
+    "@angular/router": "~15.0.0",
+    "font-awesome": "^4.7.0",
+    "rxjs": "~7.5.0",
+    "tslib": "^2.4.1",
+    "zone.js": "~0.12.0"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "~0.900.2",
-    "@angular-devkit/build-ng-packagr": "~0.900.2",
-    "@angular/cli": "~9.0.2",
-    "@angular/compiler-cli": "~9.0.1",
-    "@angular/language-service": "~9.0.1",
-    "@types/node": "^12.11.1",
-    "@types/jasmine": "~3.5.0",
-    "@types/jasminewd2": "~2.0.3",
-    "codelyzer": "^5.1.2",
-    "jasmine-core": "~3.5.0",
-    "jasmine-spec-reporter": "~4.2.1",
-    "karma": "~6.3.14",
-    "karma-chrome-launcher": "~3.1.0",
-    "karma-coverage-istanbul-reporter": "~2.1.0",
-    "karma-jasmine": "~2.0.1",
-    "karma-jasmine-html-reporter": "^1.4.2",
-    "ng-packagr": "^10.1.1",
-    "protractor": "~5.4.3",
-    "ts-node": "~8.3.0",
-    "tslint": "~5.18.0",
-    "typescript": "~3.7.5"
+    "@angular-devkit/build-angular": "^15.0.0",
+    "@angular/cli": "~15.0.0",
+    "@angular/compiler-cli": "~15.0.0",
+    "@angular/language-service": "~15.0.0",
+    "@types/node": "^18.11.9",
+    "ng-packagr": "^15.0.0",
+    "ngx-deploy-npm": "^4.3.7",
+    "ts-node": "~10.9.1",
+    "typescript": "~4.8.2"
   }
 }

@@ -1,12 +1,20 @@
 {
-    "name": "ngx-gallery-9",
-    "version": "1.0.6",
-    "license": "MIT",
-    "repository": {
-      "url": "https://github.com/SaeedSpate/ngx-gallery-9"
-    },
-    "bugs": {
-      "email": "yazdani.zs@gmail.com",
-      "url": "https://github.com/SaeedSpate/ngx-gallery-9/issues"
-    }
+  "name": "ngx-gallery-15",
+  "version": "15.0.1",
+  "license": "MIT",
+  "repository": {
+    "url": "https://github.com/helios57/ngx-gallery-15"
+  },
+  "bugs": {
+    "email": "helios157@gmail.com",
+    "url": "https://github.com/helios57/ngx-gallery-15/issues"
+  },
+  "peerDependencies": {
+    "@angular/common": "^15.0.0",
+    "@angular/core": "^15.0.0",
+    "font-awesome": "^4.7.0"
+  },
+  "dependencies": {
+    "tslib": "^2.4.1"
+  }
 }

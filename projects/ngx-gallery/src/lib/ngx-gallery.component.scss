@@ -5,7 +5,7 @@
         float: left;
     }
 
-    >>> {
+    ::ng-deep {
 
         * {
             box-sizing: border-box;

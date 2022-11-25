@@ -20,7 +20,6 @@
     ],
     "paths": {
       "ngx-gallery": [
-        "dist/ngx-gallery/ngx-gallery",
         "dist/ngx-gallery"
       ]
     }

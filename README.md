@@ -1,6 +1,6 @@
 # NgxGallery
 Angular image gallery plugin
-Based on [NgxGallery](https://github.com/lukasz-galka/ngx-gallery), Compatible with Angular 9+
+Based on [NgxGallery](https://github.com/lukasz-galka/ngx-gallery), Compatible with Angular 15+
 
 # Prerequisites
 - [Font Awesome](http://fontawesome.io/) (required for icons)
@@ -29,7 +29,7 @@ import 'hammerjs';
 **If you are not using SystemJS you can skip this section.**
 ```
 map: {
-  'ngx-gallery-9': 'node_modules/ngx-gallery-9/bundles/ngx-gallery-9.umd.js',
+  'ngx-gallery-15': 'node_modules/ngx-gallery-15/bundles/ngx-gallery-15.umd.js',
 }
 ```
 
@@ -50,7 +50,7 @@ Angular Material is using `transform: translate3d(0,0,0);` in components styles.
 You can read more about this issue [here](https://github.com/angular/material2/issues/998)
 
 # Installation
-```npm install ngx-gallery-9 --save```
+```npm install ngx-gallery-15 --save```
 
 # NgxGalleryOptions
 
@@ -187,7 +187,7 @@ Examples for
 # Usage
 ````ts
 // app.module.ts
-import { NgxGalleryModule } from 'ngx-gallery-9';
+import { NgxGalleryModule } from 'ngx-gallery-15';
 ...
 @NgModule({
     imports: [
@@ -203,7 +203,7 @@ export class AppModule { }
 ````ts
 // app.component.ts
 import { Component, OnInit } from '@angular/core';
-import { NgxGalleryOptions, NgxGalleryImage, NgxGalleryAnimation } from 'ngx-gallery-9';
+import { NgxGalleryOptions, NgxGalleryImage, NgxGalleryAnimation } from 'ngx-gallery-15';
 ...
 
 @Component({
@@ -270,27 +270,27 @@ export class AppComponent implements OnInit {
 # Styling
 - Active thumbnail
 ```
->>> .ngx-gallery-thumbnail.ngx-gallery-active {  
+:deep(.ngx-gallery-thumbnail.ngx-gallery-active) {  
     /* your styles */
 }
 ```
 
 - Arrow
 ```
-ngx-gallery >>> .ngx-gallery-arrow {
+ngx-gallery ::ng-deep .ngx-gallery-arrow {
     /* your styles */
 }
 ```
 
 - Arrow in particular element
 ```
-ngx-gallery >>> ngx-gallery-image .ngx-gallery-arrow {
+ngx-gallery ::ng-deep ngx-gallery-image .ngx-gallery-arrow {
     /* your styles */
 }
-ngx-gallery >>> ngx-gallery-thumbnails .ngx-gallery-arrow {
+ngx-gallery ::ng-deep ngx-gallery-thumbnails .ngx-gallery-arrow {
     /* your styles */
 }
-ngx-gallery >>> ngx-gallery-preview .ngx-gallery-arrow {
+ngx-gallery ::ng-deep ngx-gallery-preview .ngx-gallery-arrow {
     /* your styles */
 }
 ```

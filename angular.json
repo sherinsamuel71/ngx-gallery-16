@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "version": 1, 
+  "version": 1,
   "newProjectRoot": "projects",
   "projects": {
     "ngx-gallery": {
@@ -10,38 +10,41 @@
       "prefix": "lib",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-ng-packagr:build",
+          "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
-            "tsConfig": "projects/ngx-gallery/tsconfig.lib.json",
             "project": "projects/ngx-gallery/ng-package.json"
           },
           "configurations": {
             "production": {
               "tsConfig": "projects/ngx-gallery/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/ngx-gallery/tsconfig.lib.json"
             }
-          }
+          },
+          "defaultConfiguration": "production"
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "projects/ngx-gallery/src/test.ts",
             "tsConfig": "projects/ngx-gallery/tsconfig.spec.json",
-            "karmaConfig": "projects/ngx-gallery/karma.conf.js"
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ]
           }
         },
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
+        "deploy": {
+          "builder": "ngx-deploy-npm:deploy",
           "options": {
-            "tsConfig": [
-              "projects/ngx-gallery/tsconfig.lib.json",
-              "projects/ngx-gallery/tsconfig.spec.json"
-            ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
+            "access": "public",
+            "buildTarget": "production"
           }
         }
       }
-    }},
-  "defaultProject": "ngx-gallery"
+    }
+  },
+  "cli": {
+    "analytics": "d11e1c0a-d104-41ac-843c-e70d70b4a0e9"
+  }
 }
