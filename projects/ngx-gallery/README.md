@@ -187,7 +187,7 @@ Examples for
 # Usage
 ````ts
 // app.module.ts
-import { NgxGalleryModule } from 'ngx-gallery-16';
+import { NgxGalleryModule } from 'ngx-gallery-v16';
 ...
 @NgModule({
     imports: [
@@ -203,7 +203,7 @@ export class AppModule { }
 ````ts
 // app.component.ts
 import { Component, OnInit } from '@angular/core';
-import { NgxGalleryOptions, NgxGalleryImage, NgxGalleryAnimation } from 'ngx-gallery-16';
+import { NgxGalleryOptions, NgxGalleryImage, NgxGalleryAnimation } from 'ngx-gallery-v16';
 ...
 
 @Component({
